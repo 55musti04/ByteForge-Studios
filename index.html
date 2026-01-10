@@ -4,15 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BlackStack Labs | Yazılımın Sanatı</title>
-  <meta name="description" content="ByteForge Studios - Hassasiyet, performans ve amaçla yazılım geliştiriyoruz." />
-  <meta name="author" content="ByteForge Studios" />
+  <meta name="description" content="BlackStack Labs - Hassasiyet, performans ve amaçla yazılım geliştiriyoruz." />
+  <meta name="author" content="BlackStack Labs" />
   
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
   
-  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <style>
@@ -308,17 +306,33 @@
     </p>
     
     <div class="cta-group animate delay-2">
-      <a href="https://github.com/ByteForge-Studios" target="_blank" class="btn btn-primary">
-        <i data-lucide="github"></i> Yakında Uptadown'da!
+      <a href="https://github.com/55musti04" target="_blank" class="btn btn-secondary">
+        <i data-lucide="github"></i> GitHub
+      </a>
+      <a href="https://itch.io" target="_blank" class="btn btn-primary">
+        <i data-lucide="download-cloud"></i> Itch.io'da Dene
       </a>
       <a href="#projects" class="btn btn-secondary">
-        <i data-lucide="layers"></i> Develop By 55musti04.
+        <i data-lucide="layers"></i> Projelerimiz
       </a>
     </div>
   </header>
 
   <main>
+    <h2 id="projects" style="text-align: center; margin-bottom: 2rem; font-size: 2rem;" class="animate delay-1">Amiral Gemimiz</h2>
     <section class="features">
+      <div class="card animate delay-2" style="grid-column: 1 / -1; border-color: var(--accent);">
+        <div class="card-icon"><i data-lucide="music"></i></div>
+        <h3>BeatBox: Feel the Pulse</h3>
+        <p>
+          BlackStack Labs tarafından geliştirilen BeatBox, hantal medya oynatıcılarına meydan okuyor. Ultra düşük CPU kullanımı ve 30°C işlemci vizyonuyla, müziği en saf ve en hızlı haliyle deneyimleyin.
+        </p>
+        <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+           <span style="font-size: 0.8rem; background: var(--accent-glow); color: var(--accent); padding: 4px 12px; border-radius: 20px; font-weight: 600;">Uptodown: İncelemede</span>
+           <span style="font-size: 0.8rem; background: rgba(16, 185, 129, 0.1); color: #10b981; padding: 4px 12px; border-radius: 20px; font-weight: 600;">Itch.io: Yayında</span>
+        </div>
+      </div>
+
       <div class="card animate delay-1">
         <div class="card-icon"><i data-lucide="zap"></i></div>
         <h3>Ultra Performans</h3>
@@ -347,15 +361,15 @@
     <div class="stats animate delay-3">
       <div class="stat-item">
         <span class="stat-value">1+</span>
-        <span class="stat-label">Tamamlanan Proje</span>
+        <span class="stat-label">Aktif Proje</span>
       </div>
       <div class="stat-item">
         <span class="stat-value">0k</span>
         <span class="stat-label">GitHub Yıldızı</span>
       </div>
       <div class="stat-item">
-        <span class="stat-value">99.9%</span>
-        <span class="stat-label">Uptime Oranı</span>
+        <span class="stat-value">17</span>
+        <span class="stat-label">CEO Yaşı</span>
       </div>
     </div>
   </main>
@@ -366,7 +380,7 @@
       <a href="#"><i data-lucide="linkedin"></i></a>
       <a href="#"><i data-lucide="mail"></i></a>
     </div>
-    <p>© 2026 BlackStack Labs · Hassasiyet ve Kafeinle İnşa Edildi</p>
+    <p>© 2026 BlackStack Labs · Develop By 55musti04</p>
   </footer>
 
   <script>
@@ -376,7 +390,8 @@
     // Basit bir scroll efekti
     window.addEventListener('scroll', () => {
       const scrolled = window.pageYOffset;
-      document.querySelector('.grid-overlay').style.transform = `translateY(${scrolled * 0.1}px)`;
+      const grid = document.querySelector('.grid-overlay');
+      if(grid) grid.style.transform = `translateY(${scrolled * 0.1}px)`;
     });
   </script>
 </body>
